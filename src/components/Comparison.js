@@ -5,7 +5,7 @@ const Comparison = ({chartItems}) => {
     return(
         <div className='chart-container'>
             <div className='chart-header'>
-                THis is chart header
+                Vertical bar chart
             </div>   
             <div className='chart-base'>
                 {chartItems && 

@@ -61,7 +61,7 @@ class MainMenu extends React.Component {
     })
   }
 
-  handleChange = (event, newValue) => {
+  handleChange = (newValue) => {
     this.setState({ value: newValue})
   }
 
@@ -81,8 +81,8 @@ class MainMenu extends React.Component {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Item One" />
-          <Tab label="Item Two"  />
+          <Tab label="Summary" />
+          <Tab label="Comparison"  />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -124,50 +124,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainMenu);
-
-
-/**
- * While using given API I am getting cors error.  Tried to add header and mode. But no luck. 
- * Because of that, I have implemented with some other API (https://jsonmock.hackerrank.com/api/countries?page=1)
- * From this API we can get countries list.
- * 
- * I have named given excercise name as sample-project. I am mentioning this as a practice project 
- * (I don't want to let my teammates know this as a interview task)
- * 
- * Technologies Used: 
- * React
- * Redux
- * Router
- * HTML
- * CSS
- * Fluent UI - Charting package
- * 
- * 
- * Plan - Learning practice project
- * 1. Created a project
- * 2. Implemented router (added <NavLink/> routes to the navbar clicks)
- * 3. Implemented Redux
- * 4. While changing routes, fetching above mentioned API, storing the data in Redux store and getting data from store to implement UI
- * 5. Here, As I don't have multiple API's to his on different navlinks, I had taken same API with different pages and diferent data.
- * 6. In Summary Page, Based on data, shown every single country details on individual card.
- * 7. Given 'delete' option on card, by clicking on this, that card will be deleted from store and UI.
- * Note: Refreshing the page will add that card again, as I am not changing any API data. Just managing store.
- * 8. Implemented searchBox
- * a. TODO: Need to implement as like github search (Now not implemented)
- * b. Search will work when we hit enter button only (Triggering the search only on enter)
- * c. It will only search county name - full name search only.
- * 9. Comparison Tab
- * a. TODO: Need to implement a dropdown to select 
- * b. TODO: Implementation of chart - Radar chart
- * c. Instead of radar chart - implemented Vertical bar chart for countries list
- * d. Vertical bar chart imported from - fluentUI charting (Currently working on this open source package).
- * 10. Used material UI to implement Tab section
- * 11. Used Flexbox and tried best to make app responsive
- * 11. Added some random styles copied from google.
- * 
- * 
- * Future developement Plan:
- * 1. Implementing test cases
- * 2. Implementing with hooks
- * 
- */

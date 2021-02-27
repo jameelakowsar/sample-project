@@ -1,70 +1,46 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+/** 
+ * 
+ * Proeject setup
+ * 
+ * 1. Clone the repo
+ * 2. npm install
+ * 3. npm start
+ * 
+ * 
+ * Technologies Used: 
+ * React
+ * Redux
+ * Router
+ * HTML
+ * CSS
+ * Fluent UI - Charting package
+ * 
+ * 
+ * Plan - Learning practice project
+ * 1. Created a project
+ * 2. Implemented router (added <NavLink/> routes to the navbar clicks)
+ * 3. Implemented Redux
+ * 4. While changing routes, fetching above mentioned API, storing the data in Redux store and getting data from store to implement UI
+ * 5. Here, As I don't have multiple API's to his on different navlinks, I had taken same API with different pages and diferent data.
+ * 6. In Summary Page, Based on data, shown every single country details on individual card.
+ * 7. Given 'delete' option on card, by clicking on this, that card will be deleted from store and UI.
+ * Note: Refreshing the page will add that card again, as I am not changing any API data. Just managing store. -- present delete button is not working 
+ * 8. Implemented searchBox -- not working present - initial state is not rending to filter out the data.
+ * a. TODO: Need to implement as like github search (Now not implemented)
+ * b. Search will work when we hit enter button only (Triggering the search only on enter)
+ * c. It will only search county name - full name search only.
+ * 9. Comparison Tab
+ * a. TODO: Need to implement a dropdown to select 
+ * b. TODO: Implementation of chart - Radar chart
+ * c. Instead of radar chart - implemented Vertical bar chart for countries list
+ * d. Vertical bar chart imported from - fluentUI charting (Currently working on this open source package).
+ * 10. Used material UI to implement Tab section
+ * 11. Used Flexbox and tried best to make app responsive
+ * 11. Added some random styles copied from google.
+ * 
+ * 
+ * Future developement Plan:
+ * 1. Implementing test cases
+ * 2. Implementing with hooks
+ * 
+ */
